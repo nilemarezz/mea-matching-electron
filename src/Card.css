@@ -1,0 +1,23 @@
+.Card {
+  border-style: solid;
+  border: white;
+  background-color: white;
+  height: 180px;
+  width: 180px;
+  border:1px solid black;
+  float: left;
+  transition: transform 0.8s;
+  font-size: 3em;
+  z-index: 10;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.Card.face-up {
+  border: white;
+  background-color: #f87217;
+  transform: rotateY(180deg);
+  z-index: 10;
+  /* border:1px solid black; */
+}

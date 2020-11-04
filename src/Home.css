@@ -1,0 +1,92 @@
+/* Firefox old*/
+@-moz-keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0.7;
+  }
+  100% {
+      opacity:1;
+  }
+} 
+
+@-webkit-keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0.7;
+  }
+  100% {
+      opacity:1;
+  }
+}
+/* IE */
+@-ms-keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0.7;
+  }
+  100% {
+      opacity:1;
+  }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0.5;
+  }
+  100% {
+      opacity:1;
+  }
+} 
+.blink-image {
+  -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+  -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+  -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+  animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+  margin-top: 73vh;
+  z-index: 2;
+  width: 60vh; 
+  height: 20vh;
+  cursor: pointer;
+  overflow : hidden;
+}
+.background {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.background::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.title-image {
+  z-index: 1;
+  position: absolute ;
+  width: 90vh;
+  margin-left: -12vh;
+  overflow : hidden;
+  top : 28vh;
+}
+
+.background {
+  display: flex; 
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; 
+  background-color: black;
+  overflow : hidden;
+}
+.background-image {
+  position: absolute; 
+  z-index: 1 ;
+  overflow : hidden;
+  width : 1950px;
+}
+

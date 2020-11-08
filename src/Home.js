@@ -10,7 +10,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <img src={process.env.PUBLIC_URL + `/card/Mea-Love.svg`} alt="card" width="250vh" style={{ position: 'absolute', zIndex: 20, top: '45vh', left: '21vh' }} />
+        <img src={process.env.PUBLIC_URL + `/card/MEA-Love.svg`} alt="card" width="250vh" style={{ position: 'absolute', zIndex: 20, top: '45vh', left: '21vh' }} />
         <div className="background">
 
           <img src={process.env.PUBLIC_URL + `/card/card-2.svg`} alt="card" width="180vh" style={{ position: 'absolute', zIndex: 20, top: '43vh', right: '21vh' }} />

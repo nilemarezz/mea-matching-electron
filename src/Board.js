@@ -173,7 +173,7 @@ class Board extends React.Component {
     const { minutes, seconds, score, seeSecond } = this.state
     return (
       <div className="background" style={{ overflowY: 'hidden' }}>
-        <img src={process.env.PUBLIC_URL + `/image/bg.svg`} alt="bg" className="background-image" />
+        <img src={process.env.PUBLIC_URL + `/image/bg.svg`} alt="bg" className="background-image" style={{ position: 'fixed' }} />
         <img src={process.env.PUBLIC_URL + `/image/board.svg`} alt="board" style={{ zIndex: 1, position: 'absolute', height: '99vh' }} />
         <div style={{ zIndex: 20, width: '1560px', margin: '135px 100px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{
@@ -183,7 +183,7 @@ class Board extends React.Component {
             <div style={{ backgroundColor: 'white', padding: '0px 10px', borderRadius: 10 }}><h1 style={{ lineHeight: 0, fontSize: 50 }}>TIME : {minutes} : {seeSecond === 0 ? seconds : seeSecond}</h1></div>
             <div style={{ backgroundColor: 'white', padding: '0px 10px', borderRadius: 10 }}><h1 style={{ lineHeight: 0, fontSize: 50 }}>SCORE : {score}</h1></div>
           </div>
-          <div style={{ zIndex: 5, display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginTop: '7vh' }}>
+          <div style={{ zIndex: 5, display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginTop: '4vh' }}>
             {this.state.deck.map((f, i) => {
               return (<Card flip={() => { this.flip(i) }}
                 content={f.content}

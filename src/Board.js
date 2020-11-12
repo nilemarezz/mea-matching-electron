@@ -175,10 +175,10 @@ class Board extends React.Component {
       <div className="background" style={{ overflowY: 'hidden' }}>
         <img src={process.env.PUBLIC_URL + `/image/bg.svg`} alt="bg" className="background-image" style={{ position: 'fixed' }} />
         <img src={process.env.PUBLIC_URL + `/image/board.svg`} alt="board" style={{ zIndex: 1, position: 'absolute', height: '99vh' }} />
-        <div style={{ zIndex: 20, width: '1560px', margin: '135px 100px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ zIndex: 20, margin: '135px 100px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{
             display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-            width: '90%'
+            width: '1000px'
           }}>
             <div style={{ backgroundColor: 'white', padding: '0px 10px', borderRadius: 10 }}><h1 style={{ lineHeight: 0, fontSize: 50 }}>TIME : {minutes} : {seeSecond === 0 ? seconds : seeSecond}</h1></div>
             <div style={{ backgroundColor: 'white', padding: '0px 10px', borderRadius: 10 }}><h1 style={{ lineHeight: 0, fontSize: 50 }}>SCORE : {score}</h1></div>

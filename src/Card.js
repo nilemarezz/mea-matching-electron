@@ -11,7 +11,7 @@ class Card extends React.Component {
     }
     return (
       <div onClick={this.props.faceUp ? "" : this.props.flip} className={`Card ${this.props.faceUp ? 'face-up' : ''}`} style={{ backgroundColor: this.props.faceUp ? getColor(content) : 'white' }}>
-        {this.props.faceUp ? <img src={process.env.PUBLIC_URL + `/card/card-${content}.svg`} alt="card" style={{ transform: 'rotateY(-180deg)', width: '90px' }} /> : <img src={process.env.PUBLIC_URL + `/image/logo-mea.svg`} alt="logo" style={{ width: '100px' }} />}
+        {this.props.faceUp ? <img src={process.env.PUBLIC_URL + `/card/card-${content}.svg`} alt="card" style={{ transform: 'rotateY(-180deg)', width: '80px' }} /> : <img src={process.env.PUBLIC_URL + `/image/logo-mea.svg`} alt="logo" style={{ width: '80px' }} />}
       </div>
     )
   }
